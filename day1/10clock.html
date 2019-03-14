@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+ <title>clock</title>
+    <style>
+        #clock{
+            color:blue;
+            position: absolute;
+            font-size: 60px;
+            top: 30%;
+            left: 30%;
+            letter-spacing: 7px;
+            font-family: Orbitron;
+            background-color: lightblue;
+            text-align:center;
+        }
+
+    </style>
+</head>
+<body>
+<p id="clock"></p>
+
+
+<script>
+
+        function Clock() {
+
+            var d = new Date();
+            var e =  d.toLocaleTimeString();
+            console.log(e);
+            document.getElementById('clock').innerHTML = e
+            
+        }
+        setInterval(Clock, 1000);
+
+</script>
+</body>
+</html>

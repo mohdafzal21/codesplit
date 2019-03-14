@@ -1,0 +1,37 @@
+<html>
+    <head>
+<style>
+table,th, td {
+    padding: 10px 10px;
+    border: 1px solid black;
+
+}
+</style>
+</head>
+<body>
+	<br><br><br><br>
+	<table id="table">
+		
+	</table>
+<script>
+var table = document.getElementById("table")
+for(var i=1;i<11;i++)
+{
+		var tr = document.createElement("TR");       
+		console.log(tr)
+		table.appendChild(tr);    
+	for(var j=1;j<11;j++)
+	{
+    var td = document.createElement("TD");      
+		// k= ;
+		td.setAttribute("id",(i-1)*10+j );
+  		var t = document.createTextNode((i-1)*10+j);       
+	    console.log(t)
+		td.appendChild(t); 
+		tr.appendChild(td);
+		}
+}
+
+</script>
+</body>
+</html>
