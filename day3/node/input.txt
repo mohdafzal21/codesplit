@@ -1,0 +1,2 @@
+test input file
+some data to understand node js file system

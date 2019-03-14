@@ -1,0 +1,13 @@
+
+<% include partials/header %>
+       
+        <!-- <%=friends %> -->
+       <% for(var i=0; i < friends.length; i++){ %>
+       
+                 <li class="list"><%=friends[i]%></li>
+                
+     <%  } %>
+
+     <a href='/addfriend'>Add friend</a>
+
+<% include partials/footer %>
